@@ -26,11 +26,16 @@ public class Aluno extends Pessoa{
           this.dataNascimento = dataNascimento;
      }
 
-     public Turma getTurma() {
-          return turma;
+     public String getTurma() {
+          return turma.getSigla();
      }
 
      public void setTurma(Turma turma) {
           this.turma = turma;
      }
+
+     public int calcularValores(int n1, int n2) {
+          return n1 + n2;
+     }
+
 }

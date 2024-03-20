@@ -5,6 +5,7 @@ import java.util.*;
 public class Disciplina {
 
     private String nome;
+
     private int cargaHoraria;
 
     private ArrayList<Professor> professores;
@@ -44,10 +45,11 @@ public class Disciplina {
         return cargaHoraria;
     }
 
-    public void setCargaHoraria(int cargaHoraria) {
+    public int setCargaHoraria(int cargaHoraria) {
         if(cargaHoraria > 33 && cargaHoraria < 160) {
             this.cargaHoraria = cargaHoraria;
         }
 
+            return cargaHoraria;
     }
 }
